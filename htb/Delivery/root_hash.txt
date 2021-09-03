@@ -1,0 +1,12 @@
+$2a$10$VM6EeymRxJ29r8Wjkr8Dtev0O.1STWb4.4ScG.anuu7v0EFJwgjjO
+
+└─$ john root_hash.txt --wordlist=hashcat.txt                                                            1 ⨯
+Using default input encoding: UTF-8
+Loaded 1 password hash (bcrypt [Blowfish 32/64 X3])
+Cost 1 (iteration count) is 1024 for all loaded hashes
+Will run 4 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+PleaseSubscribe!21 (?)
+1g 0:00:00:00 DONE (2021-05-31 08:40) 4.545g/s 163.6p/s 163.6c/s 163.6C/s PleaseSubscribe!..PleaseSubscrio
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed

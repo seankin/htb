@@ -1,0 +1,3 @@
+scp /path/to/file username@a:/path/to/destination
+
+scp '/home/user30091/Desktop/upload_nix.txt' htb-student@:/home/htb-student
