@@ -1,0 +1,3 @@
+Password=M3g4c0rp123;User ID=ARCHETYPE
+
+python3 mssqlclient.py ARCHETYPE/sql_svc:M3g4c0rp123@10.10.10.27 -windows-auth

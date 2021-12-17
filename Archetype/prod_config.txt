@@ -1,0 +1,11 @@
+TSConfiguc
+    <DTSConfigurationHeading>
+        <DTSConfigurationFilpython3 mssqlclient.py ARCHETYPE/sql_svc@10.10.10.27 -windows-auth
+eInfo GeneratedBy="..." GeneratedFromPackageName="..." GeneratedFromPackageID="..." GeneratedDate="20.1.2019 10:0>
+    </DTSConfigurationHeading>
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[Destination].Properties[ConnectionString]" ValueType="String">
+        <ConfiguredValue>Data S
+        
+        rsist Se>
+    </Configuration>
+</DTSConfiguration>
