@@ -1,0 +1,11 @@
+Information security (infosec) is a vast field. The field has grown and evolved greatly in the last few years. It offers many specializations, including but not limited to:
+
+    Network and infrastructure security
+    Application security
+    Security testing
+    Systems auditing
+    Business continuity planning
+    Digital forensics
+    Incident detection and response
+
+protecting the "confidentiality, integrity, and availability of data," or the CIA triad.
