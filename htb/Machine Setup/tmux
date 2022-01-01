@@ -1,0 +1,12 @@
+ctl-b / ctl -a  = prefix 
+ctl-a + - = split horizontal 
+ctl-a + _ = split vertical 
+
+
+copy with mouse mode
+- select text
+- ctl-a + p = paste
+- ctl-a + P = select paste buffer 
+
+with Tmux yank plugin = copy to mac clipboard 
+- ctl - y (paste)
